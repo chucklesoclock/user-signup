@@ -102,4 +102,5 @@ ENV/
 
 # Apple Finder file
 .DS_Store
-\n.idea/
+
+.idea/
