@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Please signup...we're so lonely</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Enter Monetizable Info Below</h1>
+<form name="info" id="info" method="post">
+    <table>
+        <tr>
+            <td><label for="user">Username</label></td>
+            <td><input name="user" id="user" type="text" value="{{user}}" size=35 placeholder="3-20 characters"></td>
+            <td><span class="error">{{user_error}}</span></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" name="password" id="password" size=35
+                       placeholder="3-20 characters and 1 letter, 1 number"></td>
+            <td><span class="error">{{pass_error}}</span></td>
+        </tr>
+        <tr>
+            <td><label for="verify">Retype Password</label></td>
+            <td><input type="password" name="verify" id="verify" size=35
+                       placeholder="3-20 characters and 1 letter, 1 number"></td>
+            <td><span class="error">{{verify_error}}</span></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="text" name="email" id="email" value="{{email}}" size=35 placeholder="name@example.com"></td>
+            <td><span class="error">{{email_error}}</span></td>
+        </tr>
+    </table>
+    <input type="submit">
+</form>
+</body>
+</html>
