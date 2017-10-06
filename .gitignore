@@ -99,3 +99,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Apple Finder file
+.DS_Store
+\n.idea/
